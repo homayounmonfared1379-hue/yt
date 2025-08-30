@@ -4,10 +4,10 @@ import time
 import random
 import os
 
-# === SETTINGS ===
-BOT_TOKEN = "7971301998:AAG4T-wUt869q46AS6mLIfe0kw3sPAtxHIo"
-CHAT_ID = "@sensotestbot0"
-YOUTUBE_FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id=UCqutrz21jV8FStzLmqyvnHg"
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
+YOUTUBE_FEED_URL = os.environ["YOUTUBE_FEED_URL"]
+
 
 EMOJIS = ["🔥", "📽", "🔴"]
 LAST_VIDEO_FILE = "last_video.txt"  # فایل برای ذخیره آخرین ویدیو
@@ -86,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
